@@ -4,7 +4,7 @@ A lightweight and responsive calculator built with HTML, CSS, and JavaScript. Th
 
 ## 📸 Calculator Preview
 
-![Calculator Preview](assets/CalculatorPreview.png)
+<img src="./assets/CalculatorPreview.png" width="350" height="auto" alt="Calculator Preview">
 
 ## ⚙️ Features
 
