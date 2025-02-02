@@ -10,24 +10,53 @@
       <div id="calculator">
          <input id="display" readonly />
          <div id="keys">
-            <button class="operator-btn">+</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button class="operator-btn">-</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button class="operator-btn">*</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button class="operator-btn">/</button>
-            <button>0</button>
-            <button>.</button>
-            <button>=</button>
-            <button class="operator-btn">c</button>
+            <button
+               onclick="deleteLast()"
+               class="functionality-btn"
+               id="erase-btn"
+            >
+               &#9003;
+            </button>
+            <button
+               onclick="clearDisplay()"
+               class="functionality-btn"
+               id="clear-btn"
+            >
+               C
+            </button>
+            <button onclick="calculatePercentage()" class="functionality-btn">
+               %
+            </button>
+            <button onclick="appendToDisplay('/')" class="operator-btn">
+               &#247;
+            </button>
+
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('*')" class="operator-btn">
+               &#215;
+            </button>
+
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('-')" class="operator-btn">
+               &#8722;
+            </button>
+
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('+')" class="operator-btn">
+               &#43;
+            </button>
+
+            <button onclick="appendToDisplay('0')" id="zero-btn">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button onclick="calculate()" class="operator-btn">=</button>
          </div>
       </div>
+      <script src="script.js"></script>
    </body>
 </html>
